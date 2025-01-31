@@ -1,0 +1,13 @@
+type Attribution = {
+    auto: boolean;
+    dataSuffix?: never;
+} | {
+    auto?: never;
+    dataSuffix: `0x${string}`;
+}
+ 
+type Preference = {
+    keysUrl?: string;
+    options?: 'all' | 'smartWalletOnly' | 'eoaOnly';
+    attribution?: Attribution;
+}
